@@ -21,8 +21,116 @@ Nmap scan report for 10.0.0.197
 Host is up (0.054s latency).
  Nmap done at Mon Mar 11 13:06:44 2024 -- 249 IP addresses (6 hosts up) scanned in 19.78 seconds
 
+## Host Discovery 2 (-v -sS)
 
-## Host-specific -sV scans (Recon)
+Nmap 7.94SVN scan initiated Mon Mar 11 12:50:07 2024 as: nmap -v -sS -p- -e tun0 --excludefile excludefile.txt -oA host-discovery 10.0.0.0/24
+
+Nmap scan report for 10.0.0.74
+Host is up (0.11s latency).
+Not shown: 65518 closed tcp ports (reset)
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+554/tcp   open  rtsp
+2869/tcp  open  icslap
+3389/tcp  open  ms-wbt-server
+5357/tcp  open  wsdapi
+5985/tcp  open  wsman
+8089/tcp  open  unknown
+10243/tcp open  unknown
+47001/tcp open  winrm
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49165/tcp open  unknown
+49168/tcp open  unknown
+
+Nmap scan report for 10.0.0.82
+Host is up (0.11s latency).
+Not shown: 65521 closed tcp ports (reset)
+PORT      STATE    SERVICE
+21/tcp    open     ftp
+80/tcp    open     http
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+445/tcp   filtered microsoft-ds
+3389/tcp  open     ms-wbt-server
+5985/tcp  open     wsman
+47001/tcp open     winrm
+49152/tcp open     unknown
+49153/tcp open     unknown
+49154/tcp open     unknown
+49155/tcp open     unknown
+49165/tcp open     unknown
+49166/tcp open     unknown
+
+Nmap scan report for 10.0.0.123
+Host is up (0.10s latency).
+Not shown: 65527 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+111/tcp   open  rpcbind
+2049/tcp  open  nfs
+8089/tcp  open  unknown
+33931/tcp open  unknown
+37805/tcp open  unknown
+49785/tcp open  unknown
+52629/tcp open  unknown
+
+Nmap scan report for 10.0.0.126
+Host is up (0.10s latency).
+Not shown: 65520 closed tcp ports (reset)
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+5985/tcp  open  wsman
+8089/tcp  open  unknown
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49669/tcp open  unknown
+49673/tcp open  unknown
+49674/tcp open  unknown
+49685/tcp open  unknown
+
+Nmap scan report for 10.0.0.175
+Host is up (0.10s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+8089/tcp open  unknown
+
+Nmap scan report for 10.0.0.197
+Host is up (0.10s latency).
+Not shown: 65520 closed tcp ports (reset)
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+5985/tcp  open  wsman
+8089/tcp  open  unknown
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49669/tcp open  unknown
+49670/tcp open  unknown
+49674/tcp open  unknown
+49685/tcp open  unknown
+
+Nmap done at Mon Mar 11 14:33:51 2024 -- 249 IP addresses (7 hosts up) scanned in 6224.14 seconds
+
+
+## Host-specific Scans (-sV)
 
 ### 10.0.0.74
 
