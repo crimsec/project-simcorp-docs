@@ -174,6 +174,35 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
  Nmap done at Mon Mar 11 13:44:34 2024 -- 1 IP address (1 host up) scanned in 114.78 seconds
 
+### 10.0.0.175
+
+ Nmap 7.94SVN scan initiated Mon Mar 11 14:15:33 2024 as: nmap -sV -version-all -A -p- -oA 175-scan-results 10.0.0.175
+Nmap scan report for 10.0.0.175
+Host is up (0.11s latency).
+Not shown: 65532 closed tcp ports (conn-refused)
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 ee:5a:9a:76:38:ca:54:b6:23:18:34:96:af:15:2d:f7 (RSA)
+|   256 bf:fe:e9:bb:45:ae:97:cb:25:01:23:7a:a5:34:4b:74 (ECDSA)
+|_  256 9f:da:a0:0c:38:6a:97:a3:ee:b3:17:e4:7b:ef:7a:7a (ED25519)
+80/tcp   open  http     Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Document
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+8089/tcp open  ssl/http Splunkd httpd
+|_http-server-header: Splunkd
+| http-robots.txt: 1 disallowed entry 
+|_/
+| ssl-cert: Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser
+| Not valid before: 2021-06-08T20:26:34
+|_Not valid after:  2024-06-07T20:26:34
+|_http-title: splunkd
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+ Nmap done at Mon Mar 11 14:24:09 2024 -- 1 IP address (1 host up) scanned in 515.92 seconds
+
+
 ### 10.0.0.197
 
  Nmap 7.94SVN scan initiated Mon Mar 11 13:40:25 2024 as: nmap -sV -version-all -A -p- -oA 197-scan-results 10.0.0.197
