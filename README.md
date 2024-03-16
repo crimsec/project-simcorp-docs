@@ -2,6 +2,8 @@
 
 ## [Our Slide Deck](deck.pdf)
 
+## [Our Presentation - video](https://drive.google.com/file/d/1AhRNDWmKn0wrCK1zMQH8OjcMrOaFH-o5/view?usp=drive_link)
+
 ## [Our Pentest Report](report.pdf)
 
 ## Intro 
